@@ -1,5 +1,6 @@
 """Versão interativa do exercício 9."""
 
+import math
 print("O quádruplo de um número mais A é igual ao triplo mais B.")
 valor_a = float(input("Digite A (valor somado ao quádruplo): "))
 valor_b = float(input("Digite B (valor somado ao triplo): "))
@@ -12,4 +13,4 @@ lado_direito = 3 * numero + valor_b
 print(f"Número encontrado: {numero}")
 print(f"Lado esquerdo: {lado_esquerdo}")
 print(f"Lado direito: {lado_direito}")
-print(f"Os dois lados são iguais? {lado_esquerdo == lado_direito}")
+print(f"Os dois lados são iguais? {math.isclose(lado_esquerdo, lado_direito, abs_tol=1e-9)}")
