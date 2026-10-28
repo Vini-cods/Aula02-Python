@@ -1,5 +1,6 @@
 """Versão interativa do exercício 10."""
 
+import math
 print("Cinco vezes um número mais A é igual a sete vezes o número.")
 valor_somado = float(input("Digite A: "))
 
@@ -11,4 +12,4 @@ lado_direito = 7 * numero
 print(f"Número encontrado: {numero}")
 print(f"Lado esquerdo: {lado_esquerdo}")
 print(f"Lado direito: {lado_direito}")
-print(f"Os dois lados são iguais? {lado_esquerdo == lado_direito}")
+print(f"Os dois lados são iguais? {math.isclose(lado_esquerdo, lado_direito, abs_tol=1e-9)}")
